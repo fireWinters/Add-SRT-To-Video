@@ -7,6 +7,8 @@
 *.flv
 *.wmv
 *.DS_Store
+*.srt
+videos/*
 
 # 忽略models文件夹下的所有文件
 models/*
