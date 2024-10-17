@@ -110,20 +110,20 @@ while cap.isOpened():
 cap.release()
 out.release()
 
-# 使用 ffmpeg 将原始音频和字幕叠加到最终输出视频中
-command = [
-    "ffmpeg",
-    "-i", output_video_path,      # 输入没有音频的视频
-    "-i", audio_path,             # 输入原始音频
-    "-vf", f"subtitles='{subtitle_path}'",  # 添加字幕
-    "-c:v", "libx264",           # 使用 H.264 编码视频
-    "-c:a", "aac",               # 使用 AAC 编码音频
-    "-b:a", "192k",              # 设置音频比特率
-    "-movflags", "+faststart",   # 优化视频播放
-    "-y",                         # 如果文件已存在则覆盖
-    final_output_path              # 输出带有音频和字幕的视频
-]
+# # 使用 ffmpeg 将原始音频和字幕叠加到最终输出视频中
+# command = [
+#     "ffmpeg",
+#     "-i", output_video_path,      # 输入没有音频的视频
+#     "-i", audio_path,             # 输入原始音频
+#     "-vf", f"subtitles='{subtitle_path}'",  # 添加字幕
+#     "-c:v", "libx264",           # 使用 H.264 编码视频
+#     "-c:a", "aac",               # 使用 AAC 编码音频
+#     "-b:a", "192k",              # 设置音频比特率
+#     "-movflags", "+faststart",   # 优化视频播放
+#     "-y",                         # 如果文件已存在则覆盖
+#     final_output_path              # 输出带有音频和字幕的视频
+# ]
 
-subprocess.run(command)
+# subprocess.run(command)
 
-print(f"字幕已取得并保存为 {final_output_path}")
+# print(f"字幕已取得并保存为 {final_output_path}")
