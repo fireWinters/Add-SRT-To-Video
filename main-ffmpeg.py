@@ -3,7 +3,7 @@ Author: Diana Tang
 Date: 2024-10-17 14:54:19
 LastEditors: Diana Tang
 Description: some description
-FilePath: /Add-SRT-To-Video/main copy.py
+FilePath: /Add-SRT-To-Video/main-ffmpeg.py
 '''
 
 
@@ -17,7 +17,6 @@ import subprocess
 # 设置文件路径
 video_path = "./videos/绪论1中文.mp4"
 audio_path = "./videos/1.1.wav"
-# model_path = "./models/vosk-model-small-cn-0.22"  # Vosk 中文模型的路径
 output_video_path = "./videos/绪论1有字幕.mp4"
 final_output_path="./videos/绪论1有字幕音频.mp4"
 subtitle_path = "./videos/subtitles.srt"
