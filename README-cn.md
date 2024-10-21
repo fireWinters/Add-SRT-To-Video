@@ -66,3 +66,9 @@ Add-SRT-To-Video --help
 ## 许可协议
 
 此脚本是开源的，并根据 MIT 许可证发布。详情请查看 [LICENSE](LICENSE) 文件。
+
+
+
+## 用来压缩视频帧率的命令行语句
+source source/main.sh
+compress_video 20241019/input.mp4 20241019/output.mp4 23 medium 1280:720 30 128k
