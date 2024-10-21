@@ -10,7 +10,7 @@ import subprocess
 import whisper
 
 # 设置文件夹路径
-videos_folder = "./videos"
+videos_folder = "./20241019"
 output_folder = "./videos-subtitles"
 
 # 创建输出文件夹
